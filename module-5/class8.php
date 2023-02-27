@@ -41,4 +41,4 @@ class Triangle extends Shape
 
 $triangle = new Rectangle(10, 10);
 echo $triangle->getArea();
-$shape = new Shape();
+// $shape = new Shape();
