@@ -9,3 +9,4 @@ array_merge() - merges two or more arrays into a single array
 array_key_exists() - checks if a given key exists in an array
 in_array() - checks if a given value exists in an array
 array_reverse() - reverses the order of elements in an array.
+run vs code-> php -S localhost:8000
