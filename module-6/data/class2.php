@@ -1,6 +1,6 @@
 <?php
 
-$finename = "D:\\Nasir php\\module-6\\data\\datas.txt";
+$finename = "C:\\ostad php\\module\\module-6\\data\\datas.txt";
 
 if (is_writable($finename)) {
     // $existingData=file_get_contents($finename);
@@ -10,5 +10,6 @@ if (is_writable($finename)) {
     fwrite($fp, "Nasir \n");
     fwrite($fp, "Faisal \n");
     fwrite($fp, "Pantho \n");
+    fwrite($fp, "Redu \n");
     fclose($fp);
 }
