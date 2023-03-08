@@ -1,15 +1,20 @@
 <?php
 
-$finename = "C:\\ostad php\\module\\module-6\\class-3\\data.txt";
+$filename = "C:\\ostad php\\module\\module-6\\class-3\\data.txt";
 
-if (is_writable($finename)) {
-    // $existingData=file_get_contents($finename);
-    $fp = fopen($finename, "a");
+$fp=fopen($filename,"a+");//r+,w+,a+ work
+fwrite($fp,"Illas \n");
+rewind($fp);
+// $line=fgets($fp);
+// echo $line;
+fwrite($fp,"Nasir\n");
+$line=fgetc($fp);
+echo $line;
 
-    // fwrite($fp,$existingData);
-    fwrite($fp, "Nasir \n");
-    fwrite($fp, "Faisal \n");
-    fwrite($fp, "Pantho \n");
-    fwrite($fp, "Redu \n");
-    fclose($fp);
-}
+
+// $line=fgets($fp);
+// echo $line;
+// fseek($fp,0);//rewind($fp)
+// fwrite($fp,"Venus");
+// fclose($fp);
+
