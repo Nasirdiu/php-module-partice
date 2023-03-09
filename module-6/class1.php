@@ -1,5 +1,5 @@
 <?php
-$filename = "C:\\ostad php\\module\\module-6\\data.txt";
+$filename = "D:\Nasir php\module-6\data.txt";
 
 if (is_readable($filename)) {
     $fp = fopen($filename, "r");
