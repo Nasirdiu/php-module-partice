@@ -22,7 +22,6 @@ if(isset($_POST['logout'])){
     $_SESSION['loggedin'] = false;
     session_destroy();
 }
-
 ?>
 
 <!DOCTYPE html>
