@@ -74,12 +74,17 @@ function getConnetion(){
         }catch(DiskFullException $e){
             echo $storage->getName()."it's disk full";
         }
+        if($this->connection){
+            break;
+          }
       }
+     
       if($this->connection){
         return $this->connection;
       }
       return false;
 }
+
 
 }
 
@@ -90,5 +95,8 @@ $cp=new MySSQLServer();
 $cp=new ConnectionPool();
 $cp->addStorage($mysql);
 $cp->addStorage($pgsql);
-$cp->addStorage($mcp);
+$cp->addStorage($mssql);
 
+$connection=$cp->getConnetion();
+
+print_r($connection);
