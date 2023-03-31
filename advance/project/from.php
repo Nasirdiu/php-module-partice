@@ -16,23 +16,23 @@
         </div>
         <div>
             <p>
-                <?php if (isset($_GET['name']) && !empty(($_GET['name']))) : ?>
+                <?php if (isset($_REQUEST['name']) && !empty(($_REQUEST['name']))) : ?>
                     Name: <?php echo $_GET['name']; ?>
                 <?php endif ?><br>
-                <?php if (isset($_GET['password']) && !empty(($_GET['password']))) { ?>
-                    Password: <?php echo $_GET['password']; ?>
+                <?php if (isset($_REQUEST['password']) && !empty(($_REQUEST['password']))) { ?>
+                    Password: <?php echo $_REQUEST['password']; ?>
                 <?php } ?>
             </p>
-        </div> 
+        </div>
         <form class="mt-40" method="GET">
             <div class="form-group">
                 <label for="name">Your Name</label>
-                <input type="text" class="form-control" name="name" placeholder="Enter Name" >
+                <input type="text" class="form-control" name="name" placeholder="Enter Name">
 
             </div>
             <div class="form-group mt-2">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password" >
+                <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
             </div>
             <div class=" mt-4 text-center mb-5 d-flex justify-content-center ">
                 <button type="submit" class="btn btn-primary mb-5">Submit</button>
