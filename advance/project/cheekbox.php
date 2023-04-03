@@ -1,3 +1,8 @@
+<?php
+include_once "function.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Cheek Box</title>
 </head>
 
 <body>
@@ -20,10 +25,13 @@
                 $name = '';
                 $password = '';
                 $checked = '';
-                if(isset($_REQUEST['cb1']) && (($_REQUEST['cb1']==1))){
-                    $checked='checked';
+                if (isset($_REQUEST['cb1']) && (($_REQUEST['cb1'] == 1))) {
+                    $checked = 'checked';
                 }
+                // print_r($_REQUEST);
                 ?>
+
+
 
                 <?php if (isset($_REQUEST['name']) && !empty(($_REQUEST['name']))) {
                     $name = htmlspecialchars($_REQUEST['name']);
@@ -58,6 +66,18 @@
                 <input class='m-2' type="checkbox" name='cb1' id='cb1' value='1' <?php echo $checked; ?>>
                 <label for="cb1" class=''>Some cheekbox</label>
             </div>
+            <label for="">Select Some Fruits</label><br />
+            <input type="checkbox" name="fruits[]" value='orange' <?php isFoodsChecked( 'orange') ?> >
+            <label for="" class=>Orange</label><br />
+            <input type="checkbox" name="fruits[]" value='mango' <?php isFoodsChecked( 'mango') ?>>
+            <label for="" class=>mango</label><br />
+            <input type="checkbox" name="fruits[]" value='banna' <?php isFoodsChecked( 'banna') ?>>
+            <label for="" class=>banna</label><br />
+            <input type="checkbox" name="fruits[]" value='lemon' <?php isFoodsChecked( 'lemon') ?>>
+            <label for="" class=>Lemon</label><br />
+            <input type="checkbox" name="fruits[]" value='orange' <?php isFoodsChecked( 'orange') ?>>
+            <label for="" class=>Orange</label><br />
+
             <div class=" mt-4 text-center mb-5 d-flex justify-content-center ">
                 <button type="submit" class="btn btn-primary mb-5">Submit</button>
             </div>
