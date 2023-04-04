@@ -18,13 +18,13 @@
             </a>
             <ul class="items-stretch hidden space-x-3 lg:flex">
                 <li class="flex">
-                    <a rel="noopener noreferrer" href="index.html" class="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-violet-400 dark:border-violet-400">Home</a>
+                    <a rel="noopener noreferrer" href="index.php" class="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-violet-400 dark:border-violet-400">Home</a>
                 </li>
                 <li class="flex">
-                    <a rel="noopener noreferrer" href="blog.html" class="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent">Blog</a>
+                    <a rel="noopener noreferrer" href="blog.php" class="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent">Blog</a>
                 </li>
                 <li class="flex">
-                    <a rel="noopener noreferrer" href="contact.html" class="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent">Contact</a>
+                    <a rel="noopener noreferrer" href="contact.php" class="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent">Contact</a>
                 </li>
                 
             </ul>
@@ -40,33 +40,36 @@
         </div>
     </header>
 
-    <section class="p-6 dark:text-gray-100 bg-black text-white">
+    <section class="p-6 dark:text-gray-100 bg-black ">
         <form novalidate="" class="container w-full max-w-xl p-8 mx-auto space-y-6 rounded-md shadow dark:bg-gray-900 ng-untouched ng-pristine ng-valid">
-            <h2 class="w-full text-3xl font-bold leading-tight">Contact us</h2>
-            <div>
+            <h2 class="w-full text-3xl font-bold leading-tight text-white">Contact us</h2>
+            <div >
                 <label for="name" class="block mb-1 ml-1">Name</label>
                 <input id="name" type="text" placeholder="Your name" required="" class="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-violet-400 dark:bg-gray-800">
             </div>
-            <div>
+            <div class="text-black>
                 <label for="email" class="block mb-1 ml-1">Email</label>
                 <input id="email" type="email" placeholder="Your email" required="" class="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-violet-400 dark:bg-gray-800">
             </div>
-            <div>
+            <div class="text-black>
                 <label for="name" class="block mb-1 ml-1">Subject
                 </label>
                 <input id="name" type="text" placeholder="Your Subject
                 " required="" class="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-violet-400 dark:bg-gray-800">
             </div>
-            <div>
+            <div class="text-black">
                 <label for="message" class="block mb-1 ml-1">Message</label>
                 <textarea id="message" type="text" placeholder="Message..." class="block w-full p-2 rounded autoexpand focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-violet-400 dark:bg-gray-800"></textarea>
             </div>
             <div>
-                <button type="submit" class="w-full px-4 py-2 font-bold rounded shadow focus:outline-none focus:ring hover:ring focus:ring-opacity-50 dark:bg-violet-400 focus:ring-violet-400 hover:ring-violet-400 dark:text-gray-900">Send</button>
+                <a href="submit_from.php">
+                    <button type="submit" class="w-full px-4 py-2 font-bold rounded shadow focus:outline-none bg-red-700 ">Send</button>
+                </a>
+               
             </div>
         </form>
     </section>
-
+<!-- footer  -->
     <footer class="px-4 divide-y dark:bg-gray-800 dark:text-gray-100">
         <div class="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
             <div class="lg:w-1/3">
