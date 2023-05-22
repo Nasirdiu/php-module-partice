@@ -10,22 +10,22 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request){
 });
 
 // Question 1
-Route::post('/userinfo',[AssignmentController::class,'UserInfo']);
+Route::post('/userInfo',[AssignmentController::class,'UserInfo']);
 
 // Question 2
-Route::post('/useragent',[AssignmentController::class,'UserAgent']);
+Route::post('/userAgent',[AssignmentController::class,'UserAgent']);
 
 // Question 3
 Route::get('/query',[AssignmentController::class,'ApiEndpoint']);
 
 // Question 4
-Route::get('/jsonresponse',[AssignmentController::class,'JsonResponse']);
+Route::get('/jsonResponse',[AssignmentController::class,'JsonResponse']);
 
 // Question 5
 Route::post('/upload',[AssignmentController::class,'FileUploads']);
 
 // Question 6
-Route::post('/setcookie',[AssignmentController::class,'SetCookie']);
+Route::post('/setCookie',[AssignmentController::class,'SetCookie']);
 
 // Question 7
 Route::post('/submit',function(Request $request){
